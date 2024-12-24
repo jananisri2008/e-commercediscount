@@ -15,7 +15,7 @@ const App = () => {
     { id: 3, name: 'Product 3', price: 15, image: Image3 },
   ];
 
-  const addToCart = (product, quantity = 1) => {
+  const addToCart = (product, quantity = 0) => {
     setCart((prevCart) => {
       const existingProduct = prevCart.find((item) => item.id === product.id);
       if (existingProduct) {

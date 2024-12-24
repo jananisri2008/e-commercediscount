@@ -1,3 +1,4 @@
+/* Product List container */
 .product-list {
   display: flex;
   gap: 20px;
@@ -6,41 +7,52 @@
   justify-content: center;
 }
 
+/* Product item card styling */
 .product-item {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
-  width: 200px;
+  width: 200px; /* Fixed width for uniformity */
+  height: 350px; /* Set a fixed height for product items */
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f9f9f9;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: space-between; /* This ensures items are spaced evenly */
 }
 
+/* Product image styling */
 .product-item img {
   width: 100px; 
   height: 100px;
   object-fit: cover; 
   margin-bottom: 10px;
+  align-self: center; /* Align the image at the center */
 }
 
+/* Product name and price */
 .product-item h3 {
   font-size: 1.1em;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .product-item p {
   margin-bottom: 10px;
+  text-align: center;
 }
 
+/* Product input box */
 .product-item input {
   width: 60px;
   text-align: center;
   margin-bottom: 10px;
+  align-self: center; /* Center the input field */
 }
 
+/* Action buttons styling */
 .product-item .action-buttons {
   display: flex;
   justify-content: center;
@@ -48,34 +60,17 @@
   margin-top: 10px;
 }
 
+/* Button styling */
 .product-item button {
-  padding: 5px 10px;
+  padding: 5px;
   background-color: yellow;
-  color:black;
+  color: black;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  flex: 1; 
-  max-width: 80px;
+  /* flex: 1;  */
 }
 
 .product-item button:hover {
-  background-color:cornsilk;
-}
-
-.cart {
-  margin: 20px;
-}
-
-.cart ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.cart li {
-  margin-bottom: 10px;
-}
-
-button {
-  margin-top: 10px;
+  background-color: cornsilk;
 }
